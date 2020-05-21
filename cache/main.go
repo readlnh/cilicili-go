@@ -1,8 +1,8 @@
 package cache
 
 import (
+	"cilicili-go/util"
 	"os"
-	"singo/util"
 	"strconv"
 
 	"github.com/go-redis/redis"

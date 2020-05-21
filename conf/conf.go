@@ -1,10 +1,10 @@
 package conf
 
 import (
+	"cilicili-go/cache"
+	"cilicili-go/model"
+	"cilicili-go/util"
 	"os"
-	"singo/cache"
-	"singo/model"
-	"singo/util"
 
 	"github.com/joho/godotenv"
 )

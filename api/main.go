@@ -1,11 +1,11 @@
 package api
 
 import (
+	"cilicili-go/conf"
+	"cilicili-go/model"
+	"cilicili-go/serializer"
 	"encoding/json"
 	"fmt"
-	"singo/conf"
-	"singo/model"
-	"singo/serializer"
 
 	"github.com/gin-gonic/gin"
 	validator "gopkg.in/go-playground/validator.v8"

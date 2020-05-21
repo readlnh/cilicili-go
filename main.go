@@ -1,8 +1,8 @@
 package main
 
 import (
-	"singo/conf"
-	"singo/server"
+	"cilicili-go/conf"
+	"cilicili-go/server"
 )
 
 func main() {

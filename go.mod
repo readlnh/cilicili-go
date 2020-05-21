@@ -1,4 +1,4 @@
-module singo
+module cilicili-go
 
 go 1.12
 

@@ -1,9 +1,9 @@
 package server
 
 import (
+	"cilicili-go/api"
+	"cilicili-go/middleware"
 	"os"
-	"singo/api"
-	"singo/middleware"
 
 	"github.com/gin-gonic/gin"
 )
@@ -36,6 +36,9 @@ func NewRouter() *gin.Engine {
 			auth.GET("user/me", api.UserMe)
 			auth.DELETE("user/logout", api.UserLogout)
 		}
+
+		// 创建视频
+		v1.POST("video", api.CreateVideo)
 	}
 	return r
 }
