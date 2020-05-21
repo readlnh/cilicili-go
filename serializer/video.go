@@ -4,10 +4,10 @@ import "cilicili-go/model"
 
 // Video 视频序列化器
 type Video struct {
-	ID        uint   `json:id`
+	ID        uint   `json:"id"`
 	Title     string `json:"title"`
 	Info      string `json:"info"`
-	CreatedAt int64  `json:created_at`
+	CreatedAt int64  `json:"created_at"`
 }
 
 // BuildVideo 序列化视频
