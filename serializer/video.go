@@ -1,6 +1,8 @@
 package serializer
 
-import "cilicili-go/model"
+import (
+	"cilicili-go/model"
+)
 
 // Video 视频序列化器
 type Video struct {
@@ -18,6 +20,16 @@ func BuildVideo(video model.Video) Video {
 		Info:      video.Info,
 		CreatedAt: video.CreatedAt.Unix(),
 	}
+}
+
+// BuildVideos 序列化视频列表
+func BuildVideos(items []model.Video) []Video {
+	var videos []Video
+	for _, item := range items {
+		video := BuildVideo(item)
+		videos = append(videos, video)
+	}
+	return videos
 }
 
 // BuildVideoResponse 序列化视频响应

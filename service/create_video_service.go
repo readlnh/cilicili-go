@@ -7,8 +7,8 @@ import (
 
 // CreateVideoService 视频投稿服务
 type CreateVideoService struct {
-	Title string `form:"title" binding:"required,min=5,max=30"`
-	Info  string `form:"info" binding:"requried,max=40"`
+	Title string `form:"title" json:"title" binding:"required,min=2,max=30"`
+	Info  string `form:"info" json:"info" binding:"max=40"`
 }
 
 // Create 创建视频
