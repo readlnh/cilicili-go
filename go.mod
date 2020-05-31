@@ -12,5 +12,6 @@ require (
 	golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
 	gopkg.in/go-playground/validator.v8 v8.18.2
 	gopkg.in/yaml.v2 v2.2.2
+	github.com/qiniu/api.v7/v7 v7.4.0
 	// github.com/aliyun/aliyun-oss-go-sdk v2.1.0+incompatible
 )
