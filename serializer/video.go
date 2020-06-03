@@ -11,6 +11,7 @@ type Video struct {
 	Info      string `json:"info"`
 	AvatarURL string `json:"avatar_url"`
 	VideoURL  string `json:"video_url"`
+	View      uint64 `json:"view"`
 	CreatedAt int64  `json:"created_at"`
 }
 
@@ -22,6 +23,7 @@ func BuildVideo(video model.Video) Video {
 		Info:      video.Info,
 		AvatarURL: video.AvatarURL(),
 		VideoURL:  video.VideoURL(),
+		View:      video.View(),
 		CreatedAt: video.CreatedAt.Unix(),
 	}
 }

@@ -49,6 +49,8 @@ func NewRouter() *gin.Engine {
 		v1.DELETE("video/:id", api.DeleteVideo)
 		// 上传授权
 		v1.POST("upload/token", api.UploadToken)
+		// 获取每日排行
+		v1.GET("rank/daily", api.DailyRank)
 	}
 	return r
 }
