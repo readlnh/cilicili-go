@@ -10,6 +10,7 @@ require (
 	github.com/jinzhu/gorm v1.9.10
 	github.com/joho/godotenv v1.3.0
 	github.com/qiniu/api.v7/v7 v7.5.0
+	github.com/robfig/cron/v3 v3.0.0
 	golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
 	gopkg.in/go-playground/validator.v8 v8.18.2
 	gopkg.in/yaml.v2 v2.2.7

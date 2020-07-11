@@ -3,6 +3,7 @@ package conf
 import (
 	"cilicili-go/cache"
 	"cilicili-go/model"
+	"cilicili-go/tasks"
 	"cilicili-go/util"
 	"os"
 
@@ -25,4 +26,7 @@ func Init() {
 	// 连接数据库
 	model.Database(os.Getenv("MYSQL_DSN"))
 	cache.Redis()
+
+	// 启动定时任务
+	tasks.CronJob()
 }

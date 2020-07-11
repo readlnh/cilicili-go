@@ -18,8 +18,8 @@ func (service *DailyRankService) Get() serializer.Response {
 
 	res := cache.RedisClient.ZRevRange(cache.RedisClient.Context(), cache.DailyRankKey, 0, 10)
 	vids := res.Val()
-	println(len(vids))
 
+	// 如果所有的浏览量都是0，那么不用查询了
 	if len(vids) >= 1 {
 		order := fmt.Sprintf("FIELD(id, %s)", strings.Join(vids, ","))
 		println(order)
